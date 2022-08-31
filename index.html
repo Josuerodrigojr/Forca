@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div class="Nome">
+        <label for="">Nome:</label>
+            <input id="usuario" type="text">
+            <br>
+            <br>
+            <label for="">Email:</label>
+            <input id="email" type="text">
+            <button onclick="cadastrar()">Confirmar</button>
+    </div>
+
+
+    <div class="Vitoria">
+        <p>Vitorias: <span id="vitoria">0</span></p>
+        <p>Derrotas: <span id="derrota">0</span></p>
+    </div>  
+
+    </header>
+
+    <main>
+        <div>
+        <img style="visibility: hidden;" src="Imagens/01.png" alt="" id="trocarimg">
+        </div>
+    </main>
+
+    <span>
+        <div class="traco">
+
+            <p id="secreto"></p>
+        </div>
+
+        <div class="categoria">
+            <label>Dica: </label>
+            <input type="text" id="categoria"></input>           
+            <label>Palavra secreta: </label>
+            <input type="text" id="palavraSecreta"></input>
+        </div>
+        
+
+        <div class="palavra">
+            <label for=""> Errado:</label>
+            <input id="letrasErradas"></input>
+            <button onclick="reset()">Jogar Novamente</button>
+            
+        </div>
+    </span>
+
+    <footer>
+        <p>
+            <button value="Q" onclick="verificarLetra('Q')" id="btnQ">Q</button> 
+            <button value="W" onclick="verificarLetra('W')" id="btnW">W</button>
+            <button value="E" onclick="verificarLetra('E')" id="btnE">E</button>
+            <button value="R" onclick="verificarLetra('R')" id="btnR">R</button>
+            <button value="T" onclick="verificarLetra('T')" id="btnT">T</button>
+            <button value="Y" onclick="verificarLetra('Y')" id="btnY">Y</button>
+            <button value="U" onclick="verificarLetra('U')" id="btnU">U</button>
+            <button value="I" onclick="verificarLetra('I')" id="btnI">I</button>
+            <button value="O" onclick="verificarLetra('O')" id="btnO">O</button>
+            <button value="P" onclick="verificarLetra('P')" id="btnP">P</button>
+        </p>
+        <p> <button value="A" onclick="verificarLetra('A')" id="btnA">A</button>
+            <button value="S" onclick="verificarLetra('S')" id="btnS">S</button>
+            <button value="D" onclick="verificarLetra('D')" id="btnD">D</button>
+            <button value="F" onclick="verificarLetra('F')" id="btnF">F</button>
+            <button value="G" onclick="verificarLetra('G')" id="btnG">G</button>
+            <button value="H" onclick="verificarLetra('H')" id="btnH">H</button>
+            <button value="J" onclick="verificarLetra('J')" id="btnJ">J</button>
+            <button value="K" onclick="verificarLetra('K')" id="btnK">K</button>
+            <button value="L" onclick="verificarLetra('L')" id="btnL">L</button>
+            <button value="Ç" onclick="verificarLetra('Ç')" id="btnÇ">Ç</button>
+        </p>
+        <p>
+            <button value="Z" onclick="verificarLetra('Z')" id="btnZ">Z</button>
+            <button value="X" onclick="verificarLetra('X')" id="btnX">X</button>
+            <button value="C" onclick="verificarLetra('C')" id="btnC">C</button>
+            <button value="V" onclick="verificarLetra('V')" id="btnV">V</button>
+            <button value="B" onclick="verificarLetra('B')" id="btnB">B</button>
+            <button value="N" onclick="verificarLetra('N')" id="btnN">N</button>
+            <button value="M" onclick="verificarLetra('M')" id="btnM">M</button>
+        </p>
+    </footer>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

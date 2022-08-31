@@ -1,0 +1,108 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 15% 40% 13% 1fr;
+    color: white;
+ 
+
+}
+
+header{
+    display: grid;
+    flex-direction: row;
+    grid-row: 1/2;
+    grid-template-columns: 60% 1fr;
+    padding: 10px;
+    background-color: #610A09;    
+}
+
+header div.Vitoria{
+    grid-column: 2/3;    
+    display: flex; 
+}
+
+header p {
+    margin-right: 50px;
+}
+
+main{
+    display: flex;
+    grid-row: 2/3;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E65C5A;
+    
+}
+
+main div {
+    height: 100%;
+}
+
+main div img {
+    height: 100%;
+}
+
+span{
+    grid-row:3/4;    
+    display: flex;
+    justify-content: space-around;
+    background-color: #E01915;
+    align-items: center;    
+}
+
+span div.categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+span div.palavra {
+    display: flex;
+    flex-direction: column;
+}
+
+span div.palavra button {
+    width: 160px;
+    margin-top: 5px;
+}
+footer{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    background-color: #612726; 
+
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #AD1210;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+
+  
+  button:hover {
+    transition: 1s ease-in-out;
+    background: #746262;
+  }
+  
+
+  
+  button{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
